@@ -1,358 +1,295 @@
 
 <!DOCTYPE html>
 <html lang="en">
-  
 <head>
-    <meta charset="UTF-8">
-
-
-  <title>Rafay Khan Digital Marketer | SEO & Digital Marketing</title>
-  <meta name="description" content="Need help growing your business online? Explore SEO, technical SEO, keyword research and link building services by Rafay Khan.">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rafay Khan | SEO Specialist & Digital Marketer</title>
+  <meta name="description" content="Rafay Khan is an SEO specialist and digital marketer offering keyword research, on-page SEO, off-page SEO, technical SEO and link building services.">
   <meta name="robots" content="index, follow">
-  <meta name="theme-color" content="#0b1220">
-
-  <!-- Replace example.com with your live website domain -->
-<link rel="canonical" href="https://rfykhan99.github.io/rafay-khan-digital-marketer/">
-
-  <meta property="og:title" content="Rafay Khan | Digital Marketing & SEO">
-  <meta property="og:description" content="Practical SEO and digital marketing services to help businesses grow online.">
-  <meta property="og:type" content="website">
-
+  <link rel="canonical" href="https://rfykhan99.github.io/rafay-khan-digital-marketer/">
+  <meta name="theme-color" content="#0b1120">
   <style>
     :root {
-      --bg: #0b1220;
-      --panel: #121d30;
-      --text: #f5f7fb;
-      --muted: #aab7cc;
-      --green: #5ee0a0;
-      --line: #27364b;
+      --bg: #0b1120;
+      --panel: #111b2e;
+      --text: #f3f7ff;
+      --muted: #aab7ca;
+      --accent: #42e8c5;
+      --border: #25344a;
     }
-
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-
+    * { box-sizing: border-box; }
     html { scroll-behavior: smooth; }
-
     body {
-      font-family: Arial, Helvetica, sans-serif;
+      margin: 0;
       background: var(--bg);
       color: var(--text);
+      font-family: Arial, Helvetica, sans-serif;
       line-height: 1.7;
     }
-
     a { color: inherit; text-decoration: none; }
-
-    .container {
-      width: min(1100px, 90%);
-      margin: auto;
-    }
-
+    .container { width: min(1100px, 90%); margin: auto; }
     header {
-      border-bottom: 1px solid var(--line);
       position: sticky;
       top: 0;
-      background: rgba(11, 18, 32, .96);
-      z-index: 10;
+      z-index: 5;
+      background: rgba(11,17,32,.95);
+      border-bottom: 1px solid var(--border);
     }
-
     nav {
       min-height: 76px;
       display: flex;
       justify-content: space-between;
       align-items: center;
       gap: 20px;
-      flex-wrap: wrap;
-      padding: 15px 0;
     }
-
     .logo { font-size: 21px; font-weight: 800; }
-    .logo span { color: var(--green); }
-
-    .nav-links {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
-      font-size: 14px;
-      color: var(--muted);
+    .logo span, .accent { color: var(--accent); }
+    .navlinks { display: flex; flex-wrap: wrap; gap: 20px; }
+    .navlinks a { color: var(--muted); font-size: 14px; }
+    .navlinks a:hover { color: var(--accent); }
+    .hero { padding: 100px 0 90px; }
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.5fr 1fr;
+      gap: 55px;
+      align-items: center;
     }
-
-    .nav-links a:hover { color: var(--green); }
-
-    .hero { padding: 100px 0 85px; }
-
-    .tag {
-      display: inline-block;
-      color: var(--green);
-      border: 1px solid #285b49;
-      background: #112a25;
-      padding: 6px 13px;
-      border-radius: 30px;
-      font-size: 13px;
-      margin-bottom: 22px;
+    .eyebrow {
+      color: var(--accent);
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      font-size: 12px;
     }
-
     h1 {
-      font-size: clamp(38px, 6vw, 66px);
-      line-height: 1.12;
-      max-width: 850px;
+      font-size: clamp(40px, 6vw, 68px);
+      line-height: 1.1;
       letter-spacing: -2px;
+      margin: 18px 0;
     }
-
-    h1 span { color: var(--green); }
-
-    .hero p {
-      color: var(--muted);
-      max-width: 650px;
-      margin: 23px 0 30px;
-      font-size: 17px;
-    }
-
-    .buttons { display: flex; flex-wrap: wrap; gap: 14px; }
-
+    h2 { font-size: clamp(29px, 4vw, 40px); line-height: 1.2; }
+    .lead, .muted { color: var(--muted); }
+    .lead { font-size: 18px; max-width: 620px; }
+    .actions { display: flex; flex-wrap: wrap; gap: 13px; margin-top: 30px; }
     .btn {
       display: inline-block;
       padding: 13px 21px;
-      border-radius: 9px;
-      font-weight: bold;
-      background: var(--green);
-      color: #092018;
+      border: 1px solid var(--accent);
+      border-radius: 8px;
+      font-weight: 700;
     }
-
-    .btn.secondary {
-      background: transparent;
-      border: 1px solid var(--line);
-      color: var(--text);
-    }
-
-    section { padding: 72px 0; }
-
-    .section-label {
-      color: var(--green);
-      font-size: 13px;
-      text-transform: uppercase;
-      letter-spacing: 2px;
-      font-weight: bold;
-    }
-
-    h2 {
-      font-size: clamp(29px, 4vw, 42px);
-      line-height: 1.2;
-      margin: 12px 0 16px;
-    }
-
-    .section-intro {
-      max-width: 650px;
-      color: var(--muted);
-      margin-bottom: 30px;
-    }
-
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 20px;
-    }
-
-    .card {
+    .primary { background: var(--accent); color: #07131b; }
+    .secondary { color: var(--accent); }
+    .hero-card, .card {
       background: var(--panel);
-      border: 1px solid var(--line);
-      border-radius: 15px;
-      padding: 25px;
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 28px;
     }
-
-    .card .icon { font-size: 27px; }
-
-    .card h3 { margin: 13px 0 10px; font-size: 20px; }
-
-    .card p, .about p, .contact p {
-      color: var(--muted);
-      font-size: 15px;
+    .hero-card { box-shadow: 0 20px 70px #0003; }
+    .monogram {
+      width: 76px; height: 76px;
+      display: grid; place-items: center;
+      background: #173d43; color: var(--accent);
+      border-radius: 20px; font-size: 30px; font-weight: 800;
+      margin-bottom: 22px;
     }
-
-    .about-box {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 35px;
-      align-items: start;
-      background: var(--panel);
-      border: 1px solid var(--line);
-      border-radius: 18px;
-      padding: 35px;
+    .hero-card h3 { font-size: 24px; margin: 0 0 8px; }
+    .taglist { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 22px; }
+    .tag {
+      border: 1px solid #31504f;
+      background: #102c31;
+      color: #a4f6e4;
+      border-radius: 30px;
+      padding: 6px 11px;
+      font-size: 12px;
     }
-
-    .checklist { list-style: none; }
-
-    .checklist li { margin: 10px 0; }
-
-    .checklist li::before {
-      content: "✓";
-      color: var(--green);
-      margin-right: 10px;
-      font-weight: bold;
+    section { padding: 75px 0; scroll-margin-top: 80px; }
+    .section-head { max-width: 650px; margin-bottom: 32px; }
+    .section-head p { color: var(--muted); }
+    .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+    .card { transition: transform .2s, border-color .2s; }
+    .card:hover { transform: translateY(-4px); border-color: var(--accent); }
+    .icon { font-size: 27px; }
+    .card h3 { margin: 12px 0 8px; font-size: 19px; }
+    .card p { color: var(--muted); margin-bottom: 0; }
+    .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: start; }
+    .checklist { list-style: none; padding: 0; }
+    .checklist li { margin: 12px 0; }
+    .checklist li::before { content: "✓"; color: var(--accent); font-weight: 800; margin-right: 10px; }
+    .steps { counter-reset: step; }
+    .step { position: relative; padding-top: 48px; }
+    .step::before {
+      counter-increment: step; content: "0" counter(step);
+      position: absolute; top: 8px; left: 28px;
+      color: var(--accent); font-size: 22px; font-weight: 800;
     }
-
-    .contact-box {
-      border: 1px solid var(--line);
-      background: var(--panel);
-      padding: 35px;
+    .contact-panel {
+      padding: 42px; border: 1px solid var(--border);
+      background: linear-gradient(135deg, #14253a, #102c31);
       border-radius: 18px;
     }
-
-    .contact-links {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 14px;
-      margin-top: 25px;
-    }
-
-    footer {
-      border-top: 1px solid var(--line);
-      padding: 25px 0;
-      color: var(--muted);
-      font-size: 13px;
-    }
-
-    @media (max-width: 750px) {
+    .contact-list { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 25px; }
+    footer { padding: 28px 0; border-top: 1px solid var(--border); color: var(--muted); font-size: 13px; }
+    footer .container { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px; }
+    @media (max-width: 760px) {
+      nav { padding: 15px 0; align-items: flex-start; flex-direction: column; }
+      .navlinks { gap: 12px; }
+      .hero { padding: 65px 0; }
+      .hero-grid, .about-grid { grid-template-columns: 1fr; gap: 28px; }
       .grid { grid-template-columns: 1fr; }
-      .about-box { grid-template-columns: 1fr; padding: 24px; }
-      .hero { padding: 70px 0 55px; }
-      .nav-links { gap: 12px; }
+      .contact-panel { padding: 25px; }
+      h1 { letter-spacing: -1px; }
     }
   </style>
 </head>
-
 <body>
   <header>
-    <nav class="container" aria-label="Main navigation">
-      <a class="logo" href="#home">Rafay<span>.</span></a>
-      <div class="nav-links">
+    <nav class="container">
+      <a class="logo" href="#home">RAFAY<span>.</span></a>
+      <div class="navlinks">
         <a href="#home">Home</a>
-        <a href="#services">Services</a>
         <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#process">Process</a>
         <a href="#contact">Contact</a>
       </div>
     </nav>
   </header>
 
   <main>
-    <section class="hero container" id="home">
-      <span class="tag">Digital Marketing & SEO</span>
-      <h1>Helping Businesses Grow with <span>Smarter SEO.</span></h1>
-      <p>
-        I'm Rafay Khan. I help businesses improve their online visibility
-        through keyword research, on-page SEO, technical SEO and link
-        building strategies tailored to their goals.
-      </p>
-      <div class="buttons">
-        <a class="btn" href="#contact">Let's Discuss Your Project ↗</a>
-        <a class="btn secondary" href="#services">Explore Services</a>
-      </div>
-    </section>
-
-    <section id="services">
-      <div class="container">
-        <div class="section-label">What I Do</div>
-        <h2>SEO Services for Online Growth</h2>
-        <p class="section-intro">
-          Build a stronger search presence with practical, ethical SEO work
-          focused on your website, audience and business objectives.
-        </p>
-
-        <div class="grid">
-          <article class="card">
-            <div class="icon">🔎</div>
-            <h3>Keyword Research</h3>
-            <p>Discover relevant search terms and understand what your
-            potential customers are looking for online.</p>
-          </article>
-
-          <article class="card">
-            <div class="icon">⚙️</div>
-            <h3>Technical SEO</h3>
-            <p>Identify technical issues involving crawling, indexing,
-            site structure and mobile usability.</p>
-          </article>
-
-          <article class="card">
-            <div class="icon">📝</div>
-            <h3>On-Page SEO</h3>
-            <p>Improve page titles, headings, content structure and
-            internal links to make pages more useful to visitors.</p>
-          </article>
-
-          <article class="card">
-            <div class="icon">🔗</div>
-            <h3>Link Building</h3>
-            <p>Plan relevant outreach and earn quality backlinks
-            through useful content and genuine relationships.</p>
-          </article>
-
-          <article class="card">
-            <div class="icon">📊</div>
-            <h3>SEO Audit</h3>
-            <p>Review your website to find SEO opportunities, technical
-            problems and areas that need improvement.</p>
-          </article>
-
-          <article class="card">
-            <div class="icon">📍</div>
-            <h3>Local SEO</h3>
-            <p>Help eligible local businesses improve their local search
-            presence and make business information consistent.</p>
-          </article>
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div>
+          <div class="eyebrow">SEO Specialist · Digital Marketer</div>
+          <h1>Helping Businesses Grow Through <span class="accent">Smarter SEO.</span></h1>
+          <p class="lead">
+            I'm Rafay Khan, a digital marketing professional focused on
+            improving website visibility through keyword research,
+            on-page SEO, off-page SEO and data-informed optimization.
+          </p>
+          <div class="actions">
+            <a class="btn primary" href="#contact">Let's Work Together ↗</a>
+            <a class="btn secondary" href="#services">Explore Services</a>
+          </div>
+        </div>
+        <div class="hero-card">
+          <div class="monogram">RK</div>
+          <div class="eyebrow">Your SEO Partner</div>
+          <h3>Rafay Khan</h3>
+          <p class="muted">SEO · Keyword Research · Digital Growth</p>
+          <div class="taglist">
+            <span class="tag">Keyword Research</span>
+            <span class="tag">On-Page SEO</span>
+            <span class="tag">Off-Page SEO</span>
+            <span class="tag">Technical SEO</span>
+          </div>
         </div>
       </div>
     </section>
 
     <section id="about">
-      <div class="container">
-        <div class="about-box">
-          <div class="about">
-            <div class="section-label">About Me</div>
-            <h2>SEO Focused on Your Business Goals</h2>
-            <p>
-              I work on improving website visibility by focusing on
-              relevant keywords, useful content, sound technical
-              foundations and sustainable SEO practices.
-            </p>
-            <p style="margin-top:14px">
-              Every project starts with understanding your audience
-              and identifying the opportunities that matter most.
-            </p>
-          </div>
-
+      <div class="container about-grid">
+        <div>
+          <div class="eyebrow">About Me</div>
+          <h2>Focused on visibility, relevance and growth.</h2>
+        </div>
+        <div>
+          <p class="muted">
+            I help businesses strengthen their online presence with
+            practical SEO strategies built around search intent,
+            useful content and website optimization. My goal is to
+            understand each project's needs and create a clear plan
+            aligned with its objectives.
+          </p>
           <ul class="checklist">
-            <li>Research-driven SEO strategy</li>
-            <li>Clear project communication</li>
-            <li>Website audits and recommendations</li>
-            <li>Ethical, user-focused optimization</li>
-            <li>Progress tracking and reporting</li>
+            <li>Research relevant keywords and search intent</li>
+            <li>Improve page structure and on-page elements</li>
+            <li>Identify technical SEO opportunities</li>
+            <li>Support sustainable off-page SEO and link building</li>
           </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="services">
+      <div class="container">
+        <div class="section-head">
+          <div class="eyebrow">What I Do</div>
+          <h2>SEO services built around your goals.</h2>
+          <p>Practical optimization to help make your website more relevant, accessible and search-friendly.</p>
+        </div>
+        <div class="grid">
+          <article class="card">
+            <div class="icon">⌕</div>
+            <h3>Keyword Research</h3>
+            <p>Discover relevant search terms, user intent and content opportunities for your niche.</p>
+          </article>
+          <article class="card">
+            <div class="icon">↗</div>
+            <h3>On-Page SEO</h3>
+            <p>Optimize titles, meta descriptions, headings, internal links and page content.</p>
+          </article>
+          <article class="card">
+            <div class="icon">◎</div>
+            <h3>Off-Page SEO</h3>
+            <p>Plan relevant authority-building activities and responsible link acquisition.</p>
+          </article>
+          <article class="card">
+            <div class="icon">⌘</div>
+            <h3>Technical SEO</h3>
+            <p>Review crawlability, indexing signals, site structure and technical issues.</p>
+          </article>
+          <article class="card">
+            <div class="icon">▤</div>
+            <h3>SEO Audits</h3>
+            <p>Identify potential website issues and prioritize improvements by importance.</p>
+          </article>
+          <article class="card">
+            <div class="icon">✎</div>
+            <h3>Content Optimization</h3>
+            <p>Make content more useful, well-structured and aligned with what people search for.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="process">
+      <div class="container">
+        <div class="section-head">
+          <div class="eyebrow">How I Work</div>
+          <h2>A clear, collaborative process.</h2>
+          <p>Good work starts with understanding the problem and agreeing on priorities.</p>
+        </div>
+        <div class="grid steps">
+          <article class="card step">
+            <h3>Understand</h3>
+            <p>Discuss your business, target audience, website and objectives.</p>
+          </article>
+          <article class="card step">
+            <h3>Analyze</h3>
+            <p>Research keywords and review relevant SEO opportunities.</p>
+          </article>
+          <article class="card step">
+            <h3>Optimize</h3>
+            <p>Prioritize improvements and work through an agreed action plan.</p>
+          </article>
         </div>
       </div>
     </section>
 
     <section id="contact">
       <div class="container">
-        <div class="contact-box">
-          <div class="section-label">Get in Touch</div>
-          <h2>Let's Talk About Your Website</h2>
-          <p>
-            Need SEO help for your business? Contact me to discuss
-            your website, target audience and project requirements.
-          </p>
-
-          <div class="contact-links">
-            <!-- Replace the example email with your real email -->
-            <a class="btn" href="mailto:YOUR-EMAILrfykhan99@gmail.com?subject=SEO%20Project%20Inquiry">
-              Email Me ↗
-            </a>
-
-            <!-- Replace the example number with your WhatsApp number -->
-            <a class="btn secondary"
-               href="https://wa.me/923236776731"
-               target="_blank" rel="noopener noreferrer">
-              WhatsApp Me ↗
-            </a>
+        <div class="contact-panel">
+          <div class="eyebrow">Let's Connect</div>
+          <h2>Have a project in mind?</h2>
+          <p class="muted">Tell me about your website and goals. Let's discuss how SEO can support your next steps.</p>
+          <div class="contact-list">
+            <a class="btn primary" href="mailto:rfykhan99@gmail.com?subject=SEO%20Project%20Inquiry">Email Me ↗</a>
+            <a class="btn secondary" href="https://wa.me/923236776731" target="_blank" rel="noopener noreferrer">Chat on WhatsApp ↗</a>
           </div>
+          <p class="muted">Email: rfykhan99@gmail.com</p>
         </div>
       </div>
     </section>
@@ -360,14 +297,9 @@
 
   <footer>
     <div class="container">
-      © <span id="year"></span> Rafay Khan — Digital Marketing & SEO.
-      All rights reserved.
+      <span>© <span id="year">2026</span> Rafay Khan. All rights reserved.</span>
+      <span>SEO Specialist · Digital Marketer</span>
     </div>
   </footer>
-
-  <script>
-    document.getElementById("year").textContent =
-      new Date().getFullYear();
-  </script>
 </body>
 </html>
